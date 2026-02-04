@@ -65,8 +65,6 @@ const App: React.FC = () => {
         error: err.message || "Сталася помилка. Будь ласка, спробуйте ще раз." 
       });
 
-      console.log('err', err)
-      console.log('err.message', err.message)
       // Optionally add an error message to the chat
       setMessages((prev) => [...prev, {
         id: Date.now().toString(),
