@@ -1,0 +1,8 @@
+{
+  "name": "Soul Guide MAC Cards",
+  "description": "An empathetic spiritual guide and psychologist assistant for transformational quests using MAC cards and subconscious analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
