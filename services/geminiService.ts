@@ -54,9 +54,10 @@ export const generateResponse = async (
   // 1. If sending an image -> gemini-2.5-flash-image
   // 2. If requesting a generated image -> gemini-2.5-flash-image (it can generate images)
   // 3. Otherwise -> gemini-3-flash-preview (better reasoning)
-  const modelName = (currentImageBase64 || isRequestingImage) 
-    ? 'gemini-2.5-flash-image' 
-    : 'gemini-3-flash-preview';
+  // const modelName = (currentImageBase64 || isRequestingImage)
+  //   ? 'gemini-2.5-flash-image'
+  //   : 'gemini-3-flash-preview';
+    const modelName = 'gemini-1.5-flash';
 
   const contents: Content[] = formatHistory(history);
 
