@@ -34,7 +34,7 @@ export const generateResponse = async (
   currentImageBase64: string | undefined,
   history: ChatMessage[]
 ): Promise<GenerateResponseResult> => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     throw new Error("API Key not found in environment.");
   }
